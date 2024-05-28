@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/* Estilos para o corpo da página */
+body {
+	font-family: Arial, sans-serif;
+	width: 100vw;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+	overflow-x: hidden;
+}
+
+.formHeader {
+	width: 98.94%;
+	height: 80px;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+nav {
+	background-color: rgb(41, 41, 41);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+nav a {
+	color: #feb81c;
+	font-weight: bold;
+	font-size: large;
+}
+
+nav a:hover{
+	color:  rgb(241, 192, 85);
+}
+
+nav input[type="submit"]{
+	background-color: red;
+	border-radius: 10px;
+	border: none;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+img {
+	width: 80px;
+	height: auto;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-bar {
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 50px;
+	width: 25%;
+}
+
+/* Estilos para o campo de entrada de texto */
+.search-input {
+	flex: 1;
+	padding: 8px;
+	outline: none;
+	border: none;
+}
+
+/* Estilos para o botão de pesquisa (lupa) */
+.search-button {
+	background-color: #007bff;
+	color: #fff;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
+
+h3 {
+	margin-left: 15px;
+	color: white;
+	margin-right: 20px;
+}
+
+div.loginIcon a img {
+	width: 50px;
+}
+
+div.search-bar input[type="submit"] {
+	background-color: white;
+	border: none;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	background-color: lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formGrid{
+	width:90%;
+	margin-left:100px;
+}
+
+.cardEvento {
+	width: 250px;
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.2s;
+}
+
+.cardEvento img {
+	width: 100%;
+	height: auto;
+}
+
+.cardEvento:hover {
+	transform: translateY(-8px);
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card-info {
+	padding: 20px;
+}
+
+.card-info h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.card-info p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+.grid {
+	margin: 20px;
+	float: left;
+}
+
+.custom-subimt{
+	cursor: pointer;
+}
